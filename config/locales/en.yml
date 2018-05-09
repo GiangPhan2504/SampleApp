@@ -1,13 +1,23 @@
 en:
+  ruby: "Ruby on Rails Tutorial"
+  title_home: "Home"
+  title_contact: "Contact"
+  title_about: "About"
+  title_help: "Help"
+  title_login: "Login"
+  title_new: "News"
+  tut: "Ruby on Rails Tutorial"
+  the: "The"
+  by: "by"
   static_pages:
     home:
-      title_home: "Home"
       home_page: "This is the home page for the"
       ruby: "Ruby on Rails Tutorial"
       app: "sample application."
+      welcome: "Welcome to the Sample App"
+      signup: "Sign up now !"
     about:
-      title_about: "About"
-      the: "The"
+
       tutorial: "Ruby on Rails Tutorial"
       is_a: "is a"
       book: "book"
@@ -16,18 +26,21 @@ en:
       teach: "to teach web development with"
       ruby: "Ruby on Rails"
       rails: "This is the sample application for the tutorial."
-
     help:
-      title_help: "Help"
       help: "Get help on the Ruby on Rails Tutorial at the"
       rails: "Rails Tutorial help section"
       get: "To get help on this sample app, see the"
       ruby: "Ruby on Rails Tutorial"
       book: "book"
-
     contact:
-      title_contact: "Contact"
       content_contact: "Contact the Ruby on Rails Tutorial about the sample app at the"
       contact_page: "contact page"
-  application_helper:
-    base_title: "Ruby on Rails Tutorial Sample App"
+    application_helper:
+      base_title: "Ruby on Rails Tutorial Sample App"
+  users:
+    new:
+      sign: "Sign Up"
+      title: "This will be a signup page for new users."
+
+
+
