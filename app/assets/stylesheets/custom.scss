@@ -55,7 +55,7 @@ p {
 
 /* header */
 .logo {
-  color: white;
+  color: $white;
   float: left;
   font-size: 1.7em;
   font-weight: bold;
@@ -70,6 +70,7 @@ p {
 }
 
 /* footer */
+
 footer {
   border-top: 1px solid $gray-medium-light;
   color: $gray-light;
@@ -102,6 +103,108 @@ footer {
   float: left;
   margin-top: 45px;
   width: 100%;
+}
+
+/* sidebar */
+
+aside {
+  section{
+    .user_info{
+      margin-top: 20px;
+    }
+    margin-top: 20px;
+    padding: 10px 0;
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      line-height: 1;
+      margin-bottom: 3px;
+    }
+    h1 {
+      font-size: 1.4em;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0px;
+      text-align: left;
+    }
+  }
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
+.gravatar_edit {
+  margin-top: 15px;
+}
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  @include box_sizing;
+  border: 1px solid $sliver;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+input {
+  height: auto !important;
+}
+
+.error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+
+/* miscellaneous */
+
+.debug_dump {
+  @include box_sizing;
+  clear: both;
+  float: left;
+  margin-top: 45px;
+  width: 100%;
+}
+
+/* sidebar */
+
+aside {
+  section.user_info {
+    margin-top: 20px;
+  }
+  section {
+    margin-top: 20px;
+    padding: 10px 0;
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      line-height: 1;
+      margin-bottom: 3px;
+    }
+    h1 {
+      font-size: 1.4em;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0px;
+      text-align: left;
+    }
+  }
 }
 
 .gravatar {
@@ -152,7 +255,9 @@ input {
   margin-left: 0;
   width: auto;
 }
+
 /* Users index */
+
 .users {
   list-style: none;
   margin: 0;

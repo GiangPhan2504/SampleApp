@@ -15,9 +15,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "controller.users.create_account_successfully"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "controller.users.check_mail_create_user"
+      redirect_to root_url
     else
       render :new
     end
@@ -38,16 +38,16 @@ class UsersController < ApplicationController
 
   def destroy
     if @user.destroy
-      flash[:success] = t("controller.users.delete")
+      flash[:success] = t "controller.users.delete"
     else
-      flash[:warning] = t("controller.users.delete_err")
+      flash[:warning] = t "controller.users.delete_err"
     end
     redirect_to users_url
   end
 
   private
     def user_params
-      params.require :user
+      params.require(:user)
       .permit :name, :email, :password,:password_confirmation
     end
 
@@ -58,7 +58,9 @@ class UsersController < ApplicationController
       end
     end
 
-    def correct_user; end
+    def correct_user
+      redirect_to root_url unless current_user?(@user)
+    end
 
     def admin_user
       redirect_to root_url unless current_user.admin?
@@ -71,5 +73,4 @@ class UsersController < ApplicationController
         redirect_to users_url
       end
     end
-
 end
