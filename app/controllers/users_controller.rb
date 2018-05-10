@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
   before_action :logged_in_user, except: %i(new create show)
+  before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: %i(destroy)
   before_action :find_user, except: %i(index new create)
-  before_action :correct_user, only: %i(edit update)
 
   def index
     @users = User.get_all_user params
@@ -43,7 +43,7 @@ class UsersController < ApplicationController
       flash[:warning] = t "controller.users.delete_err"
     end
     redirect_to users_url
-  end
+end
 
   private
     def user_params
