@@ -1,27 +1,70 @@
 en:
-  controller:
-    users:
-      create_account_successfully: "Welcome to the Sample App!"
+
   logo: "sample app"
   ruby: "Ruby on Rails Tutorial"
   title_home: "Home"
   title_contact: "Contact"
   title_about: "About"
   title_help: "Help"
-  title_login: "Login"
+  title_login: "Log in"
   title_new: "News"
   tut: "Ruby on Rails Tutorial"
   the: "The"
   by: "by"
   author: "Michael Hartl"
   sign_up: "Sign up"
+  forgot_password: "Forgot password"
+  new_user: "New user?"
+  signup: "Sign up now !"
+  flash_succ: "Welcome to the Sample App!"
+  flash_err: "Invalid email/password combination."
+  user: "Users"
+  account: "Acount"
+  profile: "Profile"
+  settings: "Settings"
+  logout: "Logout"
+  remember: "Remember me on this computer."
+  create_acc: "Create my account"
+  submit: "Submit"
+  controller:
+    users:
+      create_account_successfully: "Welcome to the Sample App!"
+      update_successfully: "Profile updated"
+      login_now: "Please log in."
+      delete: "User deleted."
+      check_mail_create_user: "Please check your email to activate your account."
+      account_active: "Account activated!"
+      account_not_active: "Invalid activation link"
+      following: "Following"
+      followers: "Followers"
+    password_reset:
+      sent_email_reset_password: "Email sent with password reset instructions"
+      email_not_found: "Email address not found"
+      not_empty_password: "can't be empty"
+      password_be_reset: "Password has been reset."
+      password_be_expried: "Password reset has expired."
+    application:
+      pls_login: "Please log in."
+    microposts:
+      mirco_created: "Microposts created!"
+      micro_delete: "Micropost deleted"
+
+  mailers:
+    account_activation: "Account activation"
+    password_reset: "Password reset"
+    link_reset: "Reset password"
+  user_mailer:
+    to_reset: "To reset your password click the link below:"
+    expired_two_hours: "This link will expire in two hours."
+    did_not_request_password: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+    submit_password: "Update password"
   static_pages:
     home:
       home_page: "This is the home page for the"
       ruby: "Ruby on Rails Tutorial"
       app: "sample application."
       welcome: "Welcome to the Sample App"
-      signup: "Sign up now !"
+      micro_feed: "Micropost Feed"
     about:
       tutorial: "Ruby on Rails Tutorial"
       is_a: "is a"
@@ -46,3 +89,30 @@ en:
     new:
       sign: "Sign Up"
       title: "This will be a signup page for new users."
+      submit: "Create my account"
+    edit:
+      edit: "Edit user"
+      update: "Update your profile"
+      submit: "Save changes"
+      change: "change"
+    index:
+      title: "All users"
+    user:
+      delete: "Delete"
+      confirm: "You sure?"
+      edit: "Edit"
+    show:
+      microposts: "Microposts"
+  microposts:
+    post: "Posted"
+    ago: "ago."
+    delete: "delete"
+    sure: "You sure ?"
+    upload_image: "should be less than 5MB"
+  shared:
+    view_profile: "view my profile"
+    new_micropost: "Compose new micropost..."
+    post: "Post"
+    form: "The form contains"
+    error: "error"
+    max_size_file_img: "Maximum file size is 5MB. Please choose a smaller file."
