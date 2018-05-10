@@ -1,29 +1,33 @@
 en:
   title:
-    logo: "sample app"
-    ruby: "Ruby on Rails Tutorial"
-    home: "Home"
-    contact: "Contact"
     about: "About"
-    help: "Help"
-    login: "Log in"
-    new: "News"
-    tut: "Ruby on Rails Tutorial"
-    author: "Michael Hartl"
-    sign_up: "Sign up"
-    new_user: "New user?"
-    signup: "Sign up now !"
-    flash_succ: "Welcome to the Sample App!"
-    password_wrong: "Invalid email/password combination."
-    user: "User"
     account: "Acount"
-    profile: "Profile"
-    settings: "Settings"
-    logout: "Logout"
-    the: "The"
+    author: "Michael Hartl"
     by: "by"
+    contact: "Contact"
+    flash_succ: "Welcome to the Sample App!"
+    help: "Help"
+    home: "Home"
+    login: "Log in"
+    logo: "sample app"
+    logout: "Logout"
+    edit: "Edit user"
+    new: "News"
+    new_user: "New user?"
+    not_found_user: "User not found."
+    password_wrong: "Invalid email/password combination."
+    profile: "Profile"
     remember: "Remember me on this computer."
-
+    ruby: "Ruby on Rails Tutorial"
+    settings: "Settings"
+    sign_up: "Sign up"
+    signup: "Sign up now !"
+    submit: "Save changes"
+    the: "The"
+    tut: "Ruby on Rails Tutorial"
+    user: "Users"
+    users: "All Users"
+    create_acc: "Create my account"
   static_pages:
     home:
       home_page: "This is the home page for the"
@@ -50,12 +54,16 @@ en:
       contact_page: "contact page"
     application_helper:
       base_title: "Ruby on Rails Tutorial Sample App"
-
-  users:
-    new:
-      sign: "Sign Up"
-      title: "This will be a signup page for new users."
-
   controller:
     users:
       create_account_successfully: "Welcome to the Sample App!"
+      delete: "Delete success"
+      confirm: "You sure?"
+      edit: "Edit"
+      delete_err: "User not found"
+      update_successfully: "Profile updated"
+    edit:
+      edit: "Edit user"
+      update: "Update your profile"
+      submit: "Save changes"
+      change: "change"

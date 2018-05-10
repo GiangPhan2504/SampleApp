@@ -3,3 +3,4 @@ max_length_email: 255
 min_length_password: 6
 size_user: 80
 remember_session: 1
+users_per_page: 5

@@ -9,7 +9,7 @@ class User < ApplicationRecord
     uniqueness: {case_sensitive: false}
   has_secure_password
   validates :password, presence: true,
-    length: {minimum: Settings.min_length_password}
+    length: {minimum: Settings.min_length_password}, allow_nil: true
 
   def User.digest string
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST:
@@ -21,13 +21,18 @@ class User < ApplicationRecord
     SecureRandom.urlsafe_base64
   end
 
+  def self.get_all_user params
+    User.select(:id, :name, :email).paginate(page: params[:page])
+      .limit(Settings.users_per_page).select(:email).order "name ASC"
+  end
+
   def downcase_email
     email.downcase!
   end
 
   def remember
     self.remember_token = User.new_token
-    update_attribute :remember_digest, User.digest(remember_token)
+    update_attributes remember_digest: User.digest(remember_token)
   end
 
   def authenticated? remember_token
@@ -36,7 +41,11 @@ class User < ApplicationRecord
   end
 
   def forget
-    update_attribute :remember_digest, nil
+    update_attributes remember_digest: nil
+  end
+
+  def downcase_email
+    email.downcase!
   end
 
 end
