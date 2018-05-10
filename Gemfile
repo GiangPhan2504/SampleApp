@@ -7,12 +7,14 @@ gem "bcrypt", "3.1.11"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "bootstrap-sass", "3.3.7"
 gem "bootstrap-will_paginate", "1.0.0"
+gem "carrierwave", "1.2.2"
 gem "coffee-rails", "~> 4.2"
 gem "config"
 gem "faker", "1.7.3"
 gem "i18n"
 gem "jbuilder", "~> 2.5"
 gem "jquery-rails"
+gem "mini_magick", "4.7.0"
 gem "puma", "~> 3.11"
 gem "rails", "~> 5.2.0"
 gem "rubocop", "~> 0.55.0", require: false
@@ -31,6 +33,11 @@ group :development do
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
   gem "web-console", ">= 3.3.0"
+end
+
+group :production do
+  gem "pg", "0.20.0"
+  gem "fog", "1.42"
 end
 
 group :test do
