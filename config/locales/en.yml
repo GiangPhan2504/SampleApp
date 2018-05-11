@@ -1,4 +1,7 @@
 en:
+  controller:
+    users:
+      create_account_successfully: "Welcome to the Sample App!"
   logo: "sample app"
   ruby: "Ruby on Rails Tutorial"
   title_home: "Home"
