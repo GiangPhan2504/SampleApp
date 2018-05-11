@@ -1,5 +1,8 @@
 en:
+<<<<<<< HEAD
+=======
   logo: "sample app"
+>>>>>>> 754c6a3d4d0755db2313bab60a8b63cf2e3fbe7f
   ruby: "Ruby on Rails Tutorial"
   title_home: "Home"
   title_contact: "Contact"
