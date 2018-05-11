@@ -1,4 +1,8 @@
 en:
+<<<<<<< HEAD
+=======
+  logo: "sample app"
+>>>>>>> 754c6a3d4d0755db2313bab60a8b63cf2e3fbe7f
   ruby: "Ruby on Rails Tutorial"
   title_home: "Home"
   title_contact: "Contact"
@@ -9,6 +13,8 @@ en:
   tut: "Ruby on Rails Tutorial"
   the: "The"
   by: "by"
+  author: "Michael Hartl"
+  sign_up: "Sign up"
   static_pages:
     home:
       home_page: "This is the home page for the"
@@ -17,7 +23,6 @@ en:
       welcome: "Welcome to the Sample App"
       signup: "Sign up now !"
     about:
-
       tutorial: "Ruby on Rails Tutorial"
       is_a: "is a"
       book: "book"
@@ -41,6 +46,3 @@ en:
     new:
       sign: "Sign Up"
       title: "This will be a signup page for new users."
-
-
-
