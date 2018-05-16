@@ -1,0 +1,8 @@
+max_length_name: 50
+max_length_email: 255
+min_length_password: 6
+max_content: 140
+size_user: 80
+size_micropost: 50
+size_user_avatar: 30
+users_per_page: 5

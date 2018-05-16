@@ -52,7 +52,7 @@ p {
 
 /* header */
 .logo {
-  color: white;
+  color: $white;
   float: left;
   font-size: 1.7em;
   font-weight: bold;
@@ -91,18 +91,16 @@ footer {
   }
 }
 @mixin box_sizing {
-  -moz-box-sizing:    border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing:         border-box;
+  box-sizing: border-box;
 }
 /* miscellaneous */
 
 .debug_dump {
+  @include box_sizing;
   clear: both;
   float: left;
-  width: 100%;
   margin-top: 45px;
-  @include box_sizing;
+  width: 100%;
 }
 
 /* sidebar */
@@ -112,23 +110,146 @@ aside {
     margin-top: 20px;
   }
   section {
-    padding: 10px 0;
     margin-top: 20px;
+    padding: 10px 0;
     &:first-child {
       border: 0;
       padding-top: 0;
     }
     span {
       display: block;
-      margin-bottom: 3px;
       line-height: 1;
+      margin-bottom: 3px;
     }
     h1 {
       font-size: 1.4em;
-      text-align: left;
       letter-spacing: -1px;
       margin-bottom: 3px;
       margin-top: 0px;
+      text-align: left;
+    }
+  }
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
+.gravatar_edit {
+  margin-top: 15px;
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
+.gravatar_edit {
+  margin-top: 15px;
+}
+
+.stats {
+  margin-top: 0;
+  overflow: auto;
+  padding: 0;
+  a {
+    border-left: 1px solid $gray-lighter;
+    color: gray;
+    float: left;
+    padding: 0 10px;
+    &:first-child {
+      border: 0;
+      padding-left: 0;
+    }
+    &:hover {
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+  strong {
+    display: block;
+  }
+}
+
+.user_avatars {
+  margin-top: 10px;
+  overflow: auto;
+  .gravatar {
+    margin: 1px 1px;
+  }
+  a {
+    padding: 0;
+  }
+}
+
+.users.follow {
+  padding: 0;
+}
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  @include box_sizing;
+  border: 1px solid $sliver;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+input {
+  height: auto !important;
+}
+
+.error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+@mixin box_sizing {
+  box-sizing: border-box;
+}
+/* miscellaneous */
+
+.debug_dump {
+  @include box_sizing;
+  clear: both;
+  float: left;
+  margin-top: 45px;
+  width: 100%;
+}
+
+/* sidebar */
+
+aside {
+  section.user_info {
+    margin-top: 20px;
+  }
+  section {
+    margin-top: 20px;
+    padding: 10px 0;
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      line-height: 1;
+      margin-bottom: 3px;
+    }
+    h1 {
+      font-size: 1.4em;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0px;
+      text-align: left;
     }
   }
 }
@@ -144,21 +265,21 @@ aside {
 /* forms */
 
 input, textarea, select, .uneditable-input {
-  border: 1px solid #bbb;
-  width: 100%;
-  margin-bottom: 15px;
   @include box_sizing;
+  border: 1px solid $sliver;
+  margin-bottom: 15px;
+  width: 100%;
 }
 
 input {
   height: auto !important;
 }
 
-#error_explanation {
-  color: red;
+.error_explanation {
+  color: $red;
   ul {
-    color: red;
-    margin: 0 0 30px 0;
+    color: $red;
+    margin: 0 0 30px;
   }
 }
 
@@ -166,5 +287,77 @@ input {
   @extend .has-error;
   .form-control {
     color: $state-danger-text;
+  }
+}
+
+.checkbox {
+  margin: -10px 0 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  margin-left: 0;
+  width: auto;
+}
+
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    border-bottom: 1px solid $gray-lighter;
+    overflow: auto;
+    padding: 10px 0;
+  }
+}
+
+/* microposts */
+
+.microposts {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+  .user {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .content {
+    display: block;
+    margin-left: 60px;
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+}
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+span.picture {
+  margin-top: 10px;
+  input {
+    border: 0;
   }
 }
