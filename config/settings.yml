@@ -2,3 +2,4 @@ max_length_name: 50
 max_length_email: 255
 min_length_password: 6
 size_user: 80
+remember_session: 1

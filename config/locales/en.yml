@@ -14,7 +14,7 @@ en:
     new_user: "New user?"
     signup: "Sign up now !"
     flash_succ: "Welcome to the Sample App!"
-    flash_err: "Invalid email/password combination."
+    password_wrong: "Invalid email/password combination."
     user: "User"
     account: "Acount"
     profile: "Profile"
@@ -22,6 +22,8 @@ en:
     logout: "Logout"
     the: "The"
     by: "by"
+    remember: "Remember me on this computer."
+
   static_pages:
     home:
       home_page: "This is the home page for the"
@@ -48,10 +50,12 @@ en:
       contact_page: "contact page"
     application_helper:
       base_title: "Ruby on Rails Tutorial Sample App"
+
   users:
     new:
       sign: "Sign Up"
       title: "This will be a signup page for new users."
+
   controller:
     users:
       create_account_successfully: "Welcome to the Sample App!"
