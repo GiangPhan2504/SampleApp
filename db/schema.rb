@@ -1,4 +1,5 @@
-ActiveRecord::Schema.define(version: 2018_05_13_062459) do
+ActiveRecord::Schema.define(version: 2018_05_14_150807) do
+
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
@@ -7,5 +8,9 @@ ActiveRecord::Schema.define(version: 2018_05_13_062459) do
     t.string "password_digest"
     t.string "remember_digest"
     t.boolean "admin", default: false
+    t.string "activation_digest"
+    t.boolean "activated", default: false
+    t.datetime "activated_at"
   end
+
 end

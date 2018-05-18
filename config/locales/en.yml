@@ -28,42 +28,68 @@ en:
     user: "Users"
     users: "All Users"
     create_acc: "Create my account"
-  static_pages:
-    home:
-      home_page: "This is the home page for the"
-      ruby: "Ruby on Rails Tutorial"
-      app: "sample application."
-      welcome: "Welcome to the Sample App"
-    about:
-      tutorial: "Ruby on Rails Tutorial"
-      is_a: "is a"
-      book: "book"
-      and: "and"
-      series: "screencast series"
-      teach: "to teach web development with"
-      ruby: "Ruby on Rails"
-      rails: "This is the sample application for the tutorial."
-    help:
-      help: "Get help on the Ruby on Rails Tutorial at the"
-      rails: "Rails Tutorial help section"
-      get: "To get help on this sample app, see the"
-      ruby: "Ruby on Rails Tutorial"
-      book: "book"
-    contact:
-      content_contact: "Contact the Ruby on Rails Tutorial about the sample app at the"
-      contact_page: "contact page"
-    application_helper:
-      base_title: "Ruby on Rails Tutorial Sample App"
+    account_not_active1: "Account not activated."
+    account_not_active2: "Check your email for the activation link."
   controller:
     users:
       create_account_successfully: "Welcome to the Sample App!"
-      delete: "Delete success"
-      confirm: "You sure?"
-      edit: "Edit"
-      delete_err: "User not found"
       update_successfully: "Profile updated"
+      login_now: "Please log in."
+      delete: "User deleted."
+      check_mail_create_user: "Please check your email to activate your account."
+      account_active: "Account activated!"
+      account_not_active: "Invalid activation link"
+  static_pages:
+    home:
+      app: "sample application."
+      home_page: "This is the home page for the"
+      ruby: "Ruby on Rails Tutorial"
+      welcome: "Welcome to the Sample App"
+    about:
+      and: "and"
+      book: "book"
+      is_a: "is a"
+      rails: "This is the sample application for the tutorial."
+      ruby: "Ruby on Rails"
+      series: "screencast series"
+      teach: "to teach web development with"
+      tutorial: "Ruby on Rails Tutorial"
+    help:
+      book: "book"
+      get: "To get help on this sample app, see the"
+      help: "Get help on the Ruby on Rails Tutorial at the"
+      rails: "Rails Tutorial help section"
+      ruby: "Ruby on Rails Tutorial"
+    contact:
+      contact_page: "contact page"
+      content_contact: "Contact the Ruby on Rails Tutorial about the sample app at the"
+    application_helper:
+      base_title: "Ruby on Rails Tutorial Sample App"
+
+  controller:
+    users:
+      confirm: "You sure?"
+      create_account_successfully: "Welcome to the Sample App!"
+      delete: "Delete success"
+      delete_err: "User not found"
+      edit: "Edit"
+      update_successfully: "Profile updated"
+      check_mail_create_user: "Please check your email to activate your account."
+      account_active: "Account activated!"
+      account_not_active: "Invalid activation link"
+  users:
+    new:
+      sign: "Sign Up"
+      title: "This will be a signup page for new users."
     edit:
-      edit: "Edit user"
-      update: "Update your profile"
-      submit: "Save changes"
       change: "change"
+      edit: "Edit user"
+      submit: "Save changes"
+      update: "Update your profile"
+    index:
+      title: "All users"
+    user:
+      confirm: "You sure?"
+      delete: "Delete"
+      edit: "Edit"
+
