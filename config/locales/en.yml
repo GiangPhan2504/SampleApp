@@ -28,17 +28,39 @@ en:
     user: "Users"
     users: "All Users"
     create_acc: "Create my account"
+    forgot_password: "Forgot password"
     account_not_active1: "Account not activated."
     account_not_active2: "Check your email for the activation link."
+    submit: "Submit"
   controller:
     users:
       create_account_successfully: "Welcome to the Sample App!"
       update_successfully: "Profile updated"
       login_now: "Please log in."
-      delete: "User deleted."
       check_mail_create_user: "Please check your email to activate your account."
       account_active: "Account activated!"
       account_not_active: "Invalid activation link"
+      confirm: "You sure?"
+      delete: "Delete success"
+      delete_err: "User not found"
+      edit: "Edit"
+      update_successfully: "Profile updated"
+    password_reset:
+      sent_email_reset_password: "Email sent with password reset instructions"
+      email_not_found: "Email address not found"
+      not_empty_password: "can't be empty"
+      password_be_reset: "Password has been reset."
+      password_be_expried: "Password reset has expired."
+  mailers:
+    account_activation: "Account activation"
+    password_reset: "Password reset"
+    link_reset: "Reset password"
+    confirmation: "Confirmation"
+  user_mailer:
+    to_reset: "To reset your password click the link below:"
+    expired_two_hours: "This link will expire in two hours."
+    did_not_request_password: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+    submit_password: "Update password"
   static_pages:
     home:
       app: "sample application."
@@ -65,31 +87,18 @@ en:
       content_contact: "Contact the Ruby on Rails Tutorial about the sample app at the"
     application_helper:
       base_title: "Ruby on Rails Tutorial Sample App"
-
-  controller:
-    users:
-      confirm: "You sure?"
-      create_account_successfully: "Welcome to the Sample App!"
-      delete: "Delete success"
-      delete_err: "User not found"
-      edit: "Edit"
-      update_successfully: "Profile updated"
-      check_mail_create_user: "Please check your email to activate your account."
-      account_active: "Account activated!"
-      account_not_active: "Invalid activation link"
   users:
     new:
       sign: "Sign Up"
       title: "This will be a signup page for new users."
     edit:
-      change: "change"
       edit: "Edit user"
-      submit: "Save changes"
       update: "Update your profile"
+      submit: "Save changes"
+      change: "change"
     index:
       title: "All users"
     user:
-      confirm: "You sure?"
       delete: "Delete"
+      confirm: "You sure?"
       edit: "Edit"
-
