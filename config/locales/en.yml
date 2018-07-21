@@ -51,6 +51,11 @@ en:
       not_empty_password: "can't be empty"
       password_be_reset: "Password has been reset."
       password_be_expried: "Password reset has expired."
+    application:
+      pls_login: "Please log in."
+    microposts:
+      mirco_created: "Microposts created!"
+      micro_delete: "Micropost deleted"
   mailers:
     account_activation: "Account activation"
     password_reset: "Password reset"
@@ -67,6 +72,7 @@ en:
       home_page: "This is the home page for the"
       ruby: "Ruby on Rails Tutorial"
       welcome: "Welcome to the Sample App"
+      micro_feed: "Micropost Feed"
     about:
       and: "and"
       book: "book"
@@ -102,3 +108,19 @@ en:
       delete: "Delete"
       confirm: "You sure?"
       edit: "Edit"
+      submit: "Create my account"
+    show:
+      microposts: "Microposts"
+  microposts:
+    post: "Posted"
+    ago: "ago."
+    delete: "delete"
+    sure: "You sure ?"
+    upload_image: "should be less than 5MB"
+  shared:
+    view_profile: "view my profile"
+    new_micropost: "Compose new micropost..."
+    post: "Post"
+    form: "The form contains"
+    error: "error"
+    max_size_file_img: "Maximum file size is 5MB. Please choose a smaller file."
